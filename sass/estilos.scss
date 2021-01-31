@@ -1,13 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 :root {
-    --color-primary: #007AF3;
+    --color-primary: #43a9e4;
 }
 
 body {
     background: #F2F2F2;
     margin: 0;
     font-family: Poppins, sans-serif;
+}
+
+a {
+    color: #444;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;  
 }
 
 .navbar {
@@ -40,23 +54,81 @@ body {
     
 }
 
-a {
-    color: #444;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-section {
-    padding: 5em 2em;  
-}
-
-/* .hero {
+.hero {
     text-align: center;
-} */
+    
+    .left-col {
+    
+        .subhead{
+            text-transform: uppercase;
+            font-weight: bold;
+            color: gray;
+            letter-spacing: 0.3em;
+        }
+    
+        h1 {
+            font-size: 2.5em;
+            line-height: 1.3em;
+            margin-top: .2em;
+        }
+    
+        .hero-cta {
+    
+            .primary-cta {
+                background: var(--color-primary);
+                color: white;
+                padding: .6em 1.3em;
+                font-size: 1.4em;
+                border-radius: 5em;
+                text-decoration: none;
+                display: inline-block;
+                font-weight: bold;
+            }
+    
+            .watch-video-cta {
+                display: block;
+                margin-top: 1em;
+    
+                img {
+                    margin-right: .8em;
+                }
+            }
+    
+        }
+    }
+    
+    .hero-img {
+        width: 70%;
+        margin-top: 3em;
+    }
+}
+
+.features-section {
+    background: #20272E;
+    color: white;
+
+    ul.features-list {
+        padding-left: .1em;
+
+        li {
+            font-size: 1.1em;
+            margin-bottom: 1em;
+            margin-left: 2em;
+
+            &:before {
+                content: "Hola";
+
+            }
+            &:after {
+                content: "Que tal";
+            }
+        }
+    }
+
+}
+
+
+
 
 
 

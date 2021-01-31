@@ -1,12 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-  --color-primary: #007AF3;
+  --color-primary: #43a9e4;
 }
 
 body {
   background: #F2F2F2;
   margin: 0;
   font-family: Poppins, sans-serif;
+}
+
+a {
+  color: #444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
 }
 
 .navbar {
@@ -42,21 +56,68 @@ body {
   display: none;
 }
 
-a {
-  color: #444;
+.hero {
+  text-align: center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.hero .left-col .subhead {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: gray;
+  letter-spacing: 0.3em;
 }
 
-section {
-  padding: 5em 2em;
+.hero .left-col h1 {
+  font-size: 2.5em;
+  line-height: 1.3em;
+  margin-top: .2em;
 }
 
-/* .hero {
-    text-align: center;
-} */
+.hero .left-col .hero-cta .primary-cta {
+  background: var(--color-primary);
+  color: white;
+  padding: .6em 1.3em;
+  font-size: 1.4em;
+  border-radius: 5em;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.hero .left-col .hero-cta .watch-video-cta {
+  display: block;
+  margin-top: 1em;
+}
+
+.hero .left-col .hero-cta .watch-video-cta img {
+  margin-right: .8em;
+}
+
+.hero .hero-img {
+  width: 70%;
+  margin-top: 3em;
+}
+
+.features-section {
+  background: #20272E;
+  color: white;
+}
+
+.features-section ul.features-list {
+  padding-left: .1em;
+}
+
+.features-section ul.features-list li {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+}
+
+.features-section ul.features-list li:before {
+  content: "Hola";
+}
+
+.features-section ul.features-list li:after {
+  content: "Que tal";
+}
 /*# sourceMappingURL=estilos.css.map */
