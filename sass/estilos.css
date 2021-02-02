@@ -111,13 +111,25 @@ section {
   font-size: 1.1em;
   margin-bottom: 1em;
   margin-left: 2em;
+  position: relative;
 }
 
 .features-section ul.features-list li:before {
-  content: "Hola";
+  content: "";
+  left: -2em;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/bullet.svg);
+  background-size: contain;
+  margin-right: .5em;
 }
 
 .features-section ul.features-list li:after {
   content: "Que tal";
+}
+
+.features-section img {
+  display: none;
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -114,15 +114,27 @@ section {
             font-size: 1.1em;
             margin-bottom: 1em;
             margin-left: 2em;
+            position: relative;
 
             &:before {
-                content: "Hola";
+                content: "";
+                left: -2em;
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                background-image: url(../images/bullet.svg);
+                background-size: contain;
+                margin-right: .5em;
 
             }
             &:after {
                 content: "Que tal";
             }
         }
+    }
+
+    img {
+        display: none;
     }
 
 }
